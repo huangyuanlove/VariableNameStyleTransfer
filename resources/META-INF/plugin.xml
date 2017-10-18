@@ -1,0 +1,41 @@
+<idea-plugin>
+  <id>com.huangyuanlove.transform.VariableNameStyleTransfer</id>
+  <name>VariableNameStyleTransfer</name>
+  <version>1.0</version>
+  <vendor email="huangyuan@huangyuanlove.com" url="http://www.huangyuanlove.com">huangyuanlove</vendor>
+
+  <description><![CDATA[
+      variable name style transfer,for example, from "user_name" to "userName".<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="huangyuanlove.variableNameStyleTransfer" class="com.huangyuanlove.transform.VariableNameStyleTransfer"
+            text="VariableNameStyleTransfer"
+            description="variable name style transfer,for example, from &quot;user_name&quot; to &quot;userName&quot;">
+      <add-to-group group-id="EditMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt T"/>
+    </action>
+  </actions>
+
+</idea-plugin>
