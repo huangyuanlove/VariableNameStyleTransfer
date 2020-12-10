@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.huangyuanlove.plugin.VariableNameStyleTransfer</id>
+    <name>VariableNameStyleTransfer</name>
+    <vendor email="huangyuan@huangyuanlove.com" url="https://blog.huangyuanlove.com">huangyuanlove</vendor>
+
+    <description><![CDATA[
+variable name style transfer,for example, from "user_name" to "userName"
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.android</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.huangyuanlove.plugin.VariableNameStyleTransfer"
+                class="com.huangyuanlove.plugin.VariableNameStyleTransfer" text="VariableNameStyleTransfer"
+                description="VariableNameStyleTransfer">
+            <add-to-group group-id="EditMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt T" second-keystroke="shift alt T"/>
+        </action>
+    </actions>
+</idea-plugin>

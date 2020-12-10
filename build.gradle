@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.6.5'
+}
+
+group 'com.huangyuanlove.plugin'
+version '1.8.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '201.8743.12'
+    type 'IC'
+    plugins=['android']
+}
+runIde {
+    // Absolute path to installed target 3.5 Android Studio to use as IDE Development Instance
+    // The "Contents" directory is macOS specific.
+    ideDirectory '/Applications/Android Studio.app/Contents'
+}
+patchPluginXml {
+    changeNotes """
+      """
+}

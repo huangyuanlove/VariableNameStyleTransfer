@@ -1,0 +1,1 @@
+变量名称风格转化插件，可以将user_name 风格和 userName风格互相转化 快捷键alt + t,在菜单栏Edit中第一个功能VariableNameStyleTransfer就是了 选中要转化的变量，然后快捷键转化就可以了。 可以下载TransformVariableStyle.jar从硬盘安装，~~也可以在插件仓库中搜索安装~~。
